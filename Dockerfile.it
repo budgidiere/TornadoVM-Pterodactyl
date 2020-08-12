@@ -3,9 +3,9 @@
 # Environment: Java (glibc support)
 # Minimum Panel Version: 0.6.0
 # ----------------------------------
-FROM        adoptopenjdk/openjdk8-openj9:debian-slim
+FROM        beehivelab/tornado-intel-igpu-graalvm-jdk11
 
-LABEL       author="Michael Parker" maintainer="parker@pterodactyl.io"
+LABEL       author="Bud Gidiere" maintainer="Bud Gidiere"
 
 RUN apt-get update -y \
  && apt-get install -y curl ca-certificates openssl git tar sqlite fontconfig tzdata iproute2 \
